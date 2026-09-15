@@ -1,0 +1,11 @@
+node_modules/
+.env
+secrets/
+state/*.json
+logs/*.jsonl
+
+# Not part of this project: OAuth client credential and ad-hoc Search
+# Console report exports that landed in this folder from other tasks.
+client_secret_*.apps.googleusercontent.com.json
+*.zip
+.claude/

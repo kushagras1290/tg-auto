@@ -1,0 +1,17 @@
+{
+  "name": "tg-auto-indexing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Automation that submits truegritin.com storefront URLs to search-engine indexing APIs (Google Indexing API, IndexNow).",
+  "type": "module",
+  "engines": {
+    "node": ">=18.17"
+  },
+  "scripts": {
+    "verify:google": "node src/verify-google.mjs",
+    "index:dry": "node src/submit-indexing.mjs --engine=all --dry-run",
+    "index:google": "node src/submit-indexing.mjs --engine=google",
+    "index:indexnow": "node src/submit-indexing.mjs --engine=indexnow",
+    "index:all": "node src/submit-indexing.mjs --engine=all"
+  }
+}
